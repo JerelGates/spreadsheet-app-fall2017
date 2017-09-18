@@ -100,6 +100,21 @@ let mouseButtonPressed = (event, index) => {
  * @todo FOR ASSIGNMENT 2, ADD YOUR OWN FUNCTION DEFINITIONS AS DIRECTED IN THE ASSIGNMENT
  * @todo THEN USING THESE FUNCTIONS, REPLACE THE 0 IN EACH FUNCTION DEFINITION BELOW WITH THE APPROPRIATE OUTPUT
  * @todo BE SURE TO DOCUMENT EACH FUNCTION IN JSDOC FORMAT (USE BELOW AS REFERENCE AND SEE: http://usejsdoc.org/)
+ let quartersToDollars = x => Math.trunc(x * 0.25);
+let msToTotalSeconds = x => x * 0.001;
+let convertToLarger = x => quartersToDollars(x);
+let msToTotalMinutes = x => x * 0.00006;
+let msToTotalHours = x => x * 0.000000277778;
+
+console.log("The amount of dollars you have from quarters is",convertToLarger(4));
+
+convertToLarger = x => msToTotalSeconds(x);
+console.log("The amount of milliseconds to seconds are",convertToLarger(60));
+
+//i didnt realize how long this would be
+ 
+ 
+  
  */
 
 /**
