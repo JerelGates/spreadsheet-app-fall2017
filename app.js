@@ -122,15 +122,25 @@ console.log("The amount of milliseconds to seconds are",convertToLarger(60));
  * @param {number} num the number of milliseconds to convert to seconds
  * @return {number} second for the displayed time (0 to 60)
  */
+let convertToLarger = (num, i) => Math.trunc(num/i);
 
-let getSecondFromMs   = num => 0;
+//let getSecondFromMs   = num => 0;
+let msToTotalSeconds = num => (convertToLarger(num, 1000))
 
-let getMinuteFromMs   = num => 0;
-let getHourFromMs     = num => 0;
+//let getMinuteFromMs   = num => 0;
+let msToTotalMinutes = num => convertToLarger(msToTotalSeconds(num),60)
+//let getHourFromMs     = num => 0;
+let msToTotalHours = num => convertToLarger(msToTotalMinutes(num, 60);
+                                            
+                                            
+let remainingAfterConvert = (number, i) => (number%i); //convertor
 
-let getSecondFromDays = num => 0;
-let getMinuteFromDays = num => 0;
-let getHourFromDays   = num => 0;
+
+
+//getSecondFromDays
+ let getSecondsFromDays = num => remainingAfterConvert(msToTotalSeconds(num),60)                                           
+let getMinuteFromDays = num => remainingAfterConvert(msToTotalMinutes(num),60);
+let getHourFromDays   = num => remainingAfterConvert(msToTotalHours(num),60) ;
 
 /* END REPLACEMENT FOR ASSIGNMENT 2 */
 
